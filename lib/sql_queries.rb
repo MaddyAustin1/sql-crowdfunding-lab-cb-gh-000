@@ -12,8 +12,7 @@ SUM(amount)
 FROM projects
 INNER JOIN pledges
 ON projects.id = pledges.project_id
-GROUP BY pledges.amount
-HAVING SUM(pledges.amount)
+GROUP BY projects.title
 ORDER BY projects.title ASC;"
 end
 
